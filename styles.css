@@ -80,6 +80,7 @@ a {
   align-items: center;
   gap: clamp(14px, 3vw, 32px);
   color: var(--muted);
+  font-size: 0.95rem;
   font-weight: 700;
 }
 
@@ -90,7 +91,7 @@ a {
 
 .theme-toggle {
   display: grid;
-  width: 42px;
+  min-width: 58px;
   height: 42px;
   place-items: center;
   border: 1px solid var(--line);
@@ -98,7 +99,8 @@ a {
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .hero {
@@ -135,7 +137,7 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 22px;
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-size: clamp(3.25rem, 8vw, 7rem);
   line-height: 0.95;
 }
 
@@ -196,7 +198,7 @@ h3 {
 
 .portrait {
   display: grid;
-  min-height: 300px;
+  min-height: 260px;
   place-items: center;
   overflow: hidden;
   border-radius: 8px;
@@ -208,8 +210,8 @@ h3 {
 
 .portrait span {
   display: grid;
-  width: 150px;
-  height: 150px;
+  width: 142px;
+  height: 142px;
   place-items: center;
   border: 3px solid rgba(255, 255, 255, 0.72);
   border-radius: 50%;
@@ -217,6 +219,32 @@ h3 {
   color: #ffffff;
   font-size: 3.5rem;
   font-weight: 900;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric-grid div {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+  padding: 14px;
+}
+
+.metric-grid strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.metric-grid span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
 }
 
 .section {
@@ -228,57 +256,68 @@ h3 {
   margin-bottom: 30px;
 }
 
-.project-grid {
+.timeline {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
 
-.project-card {
-  overflow: hidden;
+.experience-card,
+.achievement-grid article {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
+  box-shadow: 0 10px 26px rgba(23, 32, 38, 0.06);
 }
 
-.project-visual {
-  min-height: 180px;
-  border-bottom: 1px solid var(--line);
+.experience-card {
+  padding: clamp(22px, 4vw, 32px);
 }
 
-.visual-one {
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.32) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(180deg, rgba(255, 255, 255, 0.32) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(135deg, var(--accent), var(--gold));
+.role-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: var(--muted);
 }
 
-.visual-two {
-  background:
-    radial-gradient(circle at 28% 36%, rgba(255, 255, 255, 0.55) 0 14%, transparent 15%),
-    radial-gradient(circle at 72% 58%, rgba(255, 255, 255, 0.34) 0 18%, transparent 19%),
-    linear-gradient(135deg, var(--rose), var(--accent));
+.role-meta p {
+  margin-bottom: 0;
 }
 
-.visual-three {
-  background:
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.24) 0 10px, transparent 10px 22px),
-    linear-gradient(135deg, #427aa1, var(--accent));
+.company {
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 900;
 }
 
-.project-body {
-  padding: 22px;
+.experience-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding-left: 22px;
+  color: var(--muted);
 }
 
-.text-button {
-  margin-top: 8px;
-  border: 0;
-  background: none;
+.experience-card li::marker {
   color: var(--accent);
-  cursor: pointer;
-  font: inherit;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tags span {
+  border: 1px solid color-mix(in srgb, var(--accent) 36%, var(--line));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  color: var(--accent-strong);
+  padding: 7px 10px;
+  font-size: 0.84rem;
   font-weight: 800;
-  padding: 0;
 }
 
 .split-section {
@@ -288,6 +327,15 @@ h3 {
   align-items: start;
   background: var(--surface-strong);
   border-block: 1px solid var(--line);
+}
+
+.skill-groups {
+  display: grid;
+  gap: 22px;
+}
+
+.skill-group h3 {
+  margin-bottom: 12px;
 }
 
 .skill-list {
@@ -303,6 +351,26 @@ h3 {
   padding: 12px 14px;
   color: var(--text);
   font-weight: 800;
+}
+
+.education-section {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(280px, 1fr);
+  gap: clamp(28px, 5vw, 68px);
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.achievement-grid article {
+  padding: 22px;
+}
+
+.achievement-grid p {
+  margin-bottom: 0;
 }
 
 .contact-section {
@@ -325,30 +393,10 @@ h3 {
   font-weight: 800;
 }
 
-.toast {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  max-width: min(360px, calc(100vw - 40px));
-  transform: translateY(20px);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--text);
-  box-shadow: var(--shadow);
-  opacity: 0;
-  padding: 14px 16px;
-  transition: opacity 180ms ease, transform 180ms ease;
-}
-
-.toast.visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 @media (max-width: 860px) {
   .hero,
   .split-section,
+  .education-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -357,7 +405,12 @@ h3 {
     min-height: auto;
   }
 
-  .project-grid {
+  .role-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .achievement-grid {
     grid-template-columns: 1fr;
   }
 
@@ -376,6 +429,8 @@ h3 {
     order: 3;
     width: 100%;
     justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto;
   }
 
   h1 {
@@ -384,5 +439,9 @@ h3 {
 
   .portrait {
     min-height: 230px;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
   }
 }

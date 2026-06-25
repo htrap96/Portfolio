@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parth Tiwari | Portfolio</title>
+    <title>Parth Tiwari | Senior Software Engineer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,91 +12,155 @@
         <span>PT</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <span class="toggle-icon">☾</span>
+        <span class="toggle-icon">Dark</span>
       </button>
     </header>
 
     <main>
       <section class="hero" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">Portfolio</p>
-          <h1>Hi, I’m Parth Tiwari.</h1>
+          <p class="eyebrow">Senior Software Engineer</p>
+          <h1>Parth Tiwari</h1>
           <p>
-            I build clean, responsive web experiences with thoughtful details,
-            readable code, and a focus on practical user flows.
+            Distributed systems engineer with 7+ years of experience in
+            real-time data pipelines, high-throughput backend services, and
+            large-scale platform infrastructure.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#work">View Projects</a>
-            <a class="button secondary" href="#contact">Get In Touch</a>
+            <a class="button primary" href="#experience">View Experience</a>
+            <a class="button secondary" href="mailto:parthtiwari96@gmail.com">Email Me</a>
           </div>
         </div>
 
-        <div class="profile-panel" aria-label="Profile summary">
+        <aside class="profile-panel" aria-label="Profile summary">
           <div class="portrait" aria-hidden="true">
             <span>PT</span>
           </div>
           <div>
-            <p class="panel-label">Current Focus</p>
-            <h2>Frontend Development</h2>
+            <p class="panel-label">Current Role</p>
+            <h2>SDE-3 at Flipkart</h2>
             <p>
-              Turning ideas into polished interfaces with HTML, CSS, JavaScript,
-              and modern UI thinking.
+              Core Data Platform member building ingestion and streaming
+              infrastructure for fStream across ML and analytics workloads.
             </p>
           </div>
-        </div>
+          <div class="metric-grid" aria-label="Career highlights">
+            <div>
+              <strong>7+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div>
+              <strong>40k+</strong>
+              <span>Cataloged Assets</span>
+            </div>
+            <div>
+              <strong>5M</strong>
+              <span>Daily Updates</span>
+            </div>
+            <div>
+              <strong>1M+</strong>
+              <span>Daily Searches</span>
+            </div>
+          </div>
+        </aside>
       </section>
 
-      <section class="section" id="work">
+      <section class="section" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects</h2>
+          <p class="eyebrow">Experience</p>
+          <h2>Backend, streaming, and data platform work.</h2>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-visual visual-one"></div>
-            <div class="project-body">
-              <h3>Personal Dashboard</h3>
-              <p>
-                A responsive dashboard concept with quick stats, task tracking,
-                and clean data cards.
-              </p>
-              <button class="text-button" type="button" data-project="Personal Dashboard">
-                Preview Details
-              </button>
+        <div class="timeline">
+          <article class="experience-card">
+            <div class="role-meta">
+              <p class="company">Flipkart</p>
+              <p>SDE-3 | Jan 2025 - Present | Bangalore</p>
+            </div>
+            <ul>
+              <li>Core Data Platform member building ingestion and streaming systems for fStream.</li>
+              <li>Architected Kafka and GCP Pub/Sub REST APIs processing terabytes of data daily.</li>
+              <li>Led transition to real-time processing for ML and analytics workloads.</li>
+              <li>Redesigned fStream using Apache Beam and Apache Flink.</li>
+              <li>Built fault-tolerant MongoDB and MySQL CDC streaming solutions.</li>
+              <li>Mapped 40k+ assets with full lineage through DataHub cataloging.</li>
+            </ul>
+            <div class="tech-tags" aria-label="Flipkart technologies">
+              <span>Java</span>
+              <span>Scala</span>
+              <span>Python</span>
+              <span>Kafka</span>
+              <span>Flink</span>
+              <span>Beam</span>
+              <span>Pub/Sub</span>
+              <span>Iceberg</span>
+              <span>DataHub</span>
+              <span>MongoDB</span>
+              <span>MySQL</span>
+              <span>GCP</span>
+              <span>Terraform</span>
+              <span>Kubernetes</span>
+              <span>Docker</span>
+              <span>Grafana</span>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-visual visual-two"></div>
-            <div class="project-body">
-              <h3>Restaurant Website</h3>
-              <p>
-                A polished landing page with menu highlights, booking prompts,
-                and mobile-first layout.
-              </p>
-              <button class="text-button" type="button" data-project="Restaurant Website">
-                Preview Details
-              </button>
+          <article class="experience-card">
+            <div class="role-meta">
+              <p class="company">MakeMyTrip</p>
+              <p>Senior Software Engineer | Aug 2021 - Dec 2024 | Gurgaon</p>
+            </div>
+            <ul>
+              <li>Led B2B Flights backend development using Golang and Java.</li>
+              <li>Optimized flight search APIs with SSE, gRPC, and RxJava for 1M+ daily searches.</li>
+              <li>Decomposed a Java monolith into Search, Booking, and Ancillary microservices.</li>
+              <li>Reduced round-trip search load by 2-3s and one-way search load by 0.5s.</li>
+              <li>Integrated Amazon Flights and scaled the platform to 39,000+ SMEs and 6,300+ corporates.</li>
+              <li>Unified MakeMyTrip and Goibibo bus backends into a shared service and database.</li>
+              <li>Built ad-tech reports for B2C bus services using Kafka and MongoDB, handling 5M daily updates.</li>
+            </ul>
+            <div class="tech-tags" aria-label="MakeMyTrip technologies">
+              <span>Golang</span>
+              <span>Java</span>
+              <span>gRPC</span>
+              <span>RxJava</span>
+              <span>SSE</span>
+              <span>REST</span>
+              <span>Kafka</span>
+              <span>MongoDB</span>
+              <span>MySQL</span>
+              <span>Aerospike</span>
+              <span>Consul</span>
+              <span>Jenkins</span>
+              <span>Maven</span>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-visual visual-three"></div>
-            <div class="project-body">
-              <h3>Weather App</h3>
-              <p>
-                A compact weather UI with city search, forecast cards, and
-                accessible contrast.
-              </p>
-              <button class="text-button" type="button" data-project="Weather App">
-                Preview Details
-              </button>
+          <article class="experience-card">
+            <div class="role-meta">
+              <p class="company">Nucleus Software Exports</p>
+              <p>Software Engineer | Jul 2019 - Jul 2021 | Noida</p>
+            </div>
+            <ul>
+              <li>Built NEO-Sales Assist module integrating credit bureau and PAN validation systems.</li>
+              <li>Developed backend components for employment, income, address, and OTP verification.</li>
+              <li>Engineered core loan application REST APIs using Spring and Hibernate MVC.</li>
+            </ul>
+            <div class="tech-tags" aria-label="Nucleus Software technologies">
+              <span>Java</span>
+              <span>Spring MVC</span>
+              <span>Hibernate</span>
+              <span>REST</span>
+              <span>MySQL</span>
+              <span>Credit Bureau</span>
+              <span>PAN</span>
+              <span>OTP</span>
             </div>
           </article>
         </div>
@@ -104,42 +168,108 @@
 
       <section class="section split-section" id="skills">
         <div>
-          <p class="eyebrow">What I Use</p>
-          <h2>Skills</h2>
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Tools for reliable backend systems.</h2>
           <p>
-            A simple toolkit for building fast, usable web pages and learning
-            new patterns quickly.
+            Hands-on across service design, stream processing, data cataloging,
+            cloud infrastructure, observability, and production-grade delivery.
           </p>
         </div>
 
-        <div class="skill-list" aria-label="Skills list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Responsive Design</span>
-          <span>Git</span>
-          <span>UI Design</span>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-list">
+              <span>Java</span>
+              <span>Golang</span>
+              <span>Scala</span>
+              <span>Kotlin</span>
+              <span>C++</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend & Streaming</h3>
+            <div class="skill-list">
+              <span>Spring</span>
+              <span>Hibernate</span>
+              <span>RxJava</span>
+              <span>gRPC</span>
+              <span>REST</span>
+              <span>SSE</span>
+              <span>Kafka</span>
+              <span>Flink</span>
+              <span>Beam</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Data, Cloud & DevOps</h3>
+            <div class="skill-list">
+              <span>MongoDB</span>
+              <span>MySQL</span>
+              <span>Aerospike</span>
+              <span>GCP</span>
+              <span>Terraform</span>
+              <span>Kubernetes</span>
+              <span>Docker</span>
+              <span>Jenkins</span>
+              <span>Maven</span>
+              <span>Consul</span>
+              <span>Scalyr</span>
+              <span>Grafana</span>
+              <span>Vue.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div>
+          <p class="eyebrow">Education & Achievements</p>
+          <h2>Competitive programming roots and engineering foundation.</h2>
+        </div>
+
+        <div class="achievement-grid">
+          <article>
+            <h3>B.Tech, ECE</h3>
+            <p>IIIT Delhi | 2015 - 2019</p>
+          </article>
+          <article>
+            <h3>ACM-ICPC 2019</h3>
+            <p>Rank 183 out of 3,890 participants.</p>
+          </article>
+          <article>
+            <h3>Google Kickstart 2020</h3>
+            <p>Round G rank 116 out of 8,050 participants.</p>
+          </article>
+          <article>
+            <h3>Teaching & Social Work</h3>
+            <p>
+              Teaching Assistant for Competitive Programming. Social Welfare
+              Intern teaching Mathematics at CRY.
+            </p>
+          </article>
         </div>
       </section>
 
       <section class="section contact-section" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Let’s build something useful.</h2>
+          <h2>Let's talk backend systems, data platforms, and scale.</h2>
           <p>
-            Replace these sample links with your real email, GitHub, LinkedIn,
-            and resume once you are ready.
+            Available for engineering conversations around distributed systems,
+            data infrastructure, and high-throughput backend platforms.
           </p>
         </div>
         <div class="contact-links">
-          <a href="mailto:parth@example.com">parth@example.com</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="tel:+918826557767">+91-8826557767</a>
+          <a href="mailto:parthtiwari96@gmail.com">parthtiwari96@gmail.com</a>
+          <a href="https://linkedin.com/in/parthtiwari96" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </section>
     </main>
-
-    <div class="toast" role="status" aria-live="polite"></div>
 
     <script src="script.js"></script>
   </body>
