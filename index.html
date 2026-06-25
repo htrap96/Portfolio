@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Tiwari | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Parth Tiwari home">
+        <span>PT</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="toggle-icon">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Hi, I’m Parth Tiwari.</h1>
+          <p>
+            I build clean, responsive web experiences with thoughtful details,
+            readable code, and a focus on practical user flows.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View Projects</a>
+            <a class="button secondary" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="profile-panel" aria-label="Profile summary">
+          <div class="portrait" aria-hidden="true">
+            <span>PT</span>
+          </div>
+          <div>
+            <p class="panel-label">Current Focus</p>
+            <h2>Frontend Development</h2>
+            <p>
+              Turning ideas into polished interfaces with HTML, CSS, JavaScript,
+              and modern UI thinking.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-one"></div>
+            <div class="project-body">
+              <h3>Personal Dashboard</h3>
+              <p>
+                A responsive dashboard concept with quick stats, task tracking,
+                and clean data cards.
+              </p>
+              <button class="text-button" type="button" data-project="Personal Dashboard">
+                Preview Details
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-two"></div>
+            <div class="project-body">
+              <h3>Restaurant Website</h3>
+              <p>
+                A polished landing page with menu highlights, booking prompts,
+                and mobile-first layout.
+              </p>
+              <button class="text-button" type="button" data-project="Restaurant Website">
+                Preview Details
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-three"></div>
+            <div class="project-body">
+              <h3>Weather App</h3>
+              <p>
+                A compact weather UI with city search, forecast cards, and
+                accessible contrast.
+              </p>
+              <button class="text-button" type="button" data-project="Weather App">
+                Preview Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="skills">
+        <div>
+          <p class="eyebrow">What I Use</p>
+          <h2>Skills</h2>
+          <p>
+            A simple toolkit for building fast, usable web pages and learning
+            new patterns quickly.
+          </p>
+        </div>
+
+        <div class="skill-list" aria-label="Skills list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>Git</span>
+          <span>UI Design</span>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something useful.</h2>
+          <p>
+            Replace these sample links with your real email, GitHub, LinkedIn,
+            and resume once you are ready.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:parth@example.com">parth@example.com</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
